@@ -1,30 +1,41 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { Box, Button, Divider, Paper } from "@mui/material";
 
+// IMPOPTS 
+// icons 
 import CreateIcon from "@mui/icons-material/Create";
 import LogoutIcon from "@mui/icons-material/Logout";
 
+// styled modules 
 import { ButtonSectionStyle, mainDivStyle } from "../stylings/DetailPageStyle";
 
+// pop-up modals 
 import ImageModal from "../components/Modals/ImageModal";
 import EditModal from "../components/Modals/EditModal";
 
+// disabled form 
 import DetailForm from "../components/Items/DetailsForm";
 import ImageBox from "../components/Items/ImageBox";
+// ------------------------------------------------------------
+
+
 
 function DetailPage() {
     const navigate = useNavigate();
     
+  // user data from reqres API
   const [usersData, setUserData] = useState({});
 
+  // Modal Controls 
   const [open, setOpen] = React.useState(false);
   const [openImage, setOpenImage] = React.useState(false);
 
+  // Edit modal handles 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // Profile image handles 
   const handleImageView = () => setOpenImage(true);
   const handleCloseImage = () => setOpenImage(false);
 
@@ -40,6 +51,7 @@ function DetailPage() {
 
   };
 
+  // fetch user data rom reqres API 
   const url = "https://reqres.in/api/users/2";
   async function getdata() {
     const response = await fetch(url, {
@@ -51,7 +63,8 @@ function DetailPage() {
     setUserData(jsonData.data);
   }
 
-    useEffect(() => {
+  // check login session 
+  useEffect(() => {
         if (sessionStorage.getItem("loginEmail") === "") {
             navigate('/');
         } else {

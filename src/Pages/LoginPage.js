@@ -1,5 +1,7 @@
 import { Box } from "@mui/material";
 import MyForm from "../components/MyForm";
+// -----------------------------------------------------------
+
 function LoginPage() {
     return (
         <>
@@ -17,6 +19,7 @@ function LoginPage() {
                 width: '50%',
                 height: '50%',
                 }}>
+            {/* login form  */}
             <MyForm/>
         </Box>
 </Box>
