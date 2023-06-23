@@ -1,5 +1,7 @@
 import { Alert, Snackbar } from "@mui/material";
 import React from "react";
+// -----------------------------------------------
+
 
 function Message(props) {
 const [open, setOpen] = React.useState(true);
@@ -12,8 +14,6 @@ const handleClose = (event, reason) => {
 };
 return (
     <>
-    {/* {sessionStorage.getItem("loginEmail")}
-    {props.type} */}
     <Snackbar
         open={props.open && open}
         autoHideDuration={6000}

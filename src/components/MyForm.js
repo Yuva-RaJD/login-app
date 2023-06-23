@@ -8,6 +8,7 @@ import LoginIcon from "@mui/icons-material/Login";
 
 import Message from "./Items/Message";
 import { FormGroup } from "../stylings/DetailPageStyle";
+// ----------------------------------------------------------------
 
 const MyForm = () => {
   // Navigator

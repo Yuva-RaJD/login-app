@@ -1,7 +1,6 @@
 import { ModalStyle } from "../../stylings/DetailPageStyle";
 
 
-
 import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
 
@@ -9,9 +8,10 @@ import CheckIcon from "@mui/icons-material/Check";
 import Modal from "@mui/material/Modal";
 import { Box, Button, FormControl, FormGroup, Input } from "@mui/material";
 
-
+// ------------------------------------------------------------------
 
 function EditModal(props) {
+  
   return (
     <Modal
       open={props.open}
