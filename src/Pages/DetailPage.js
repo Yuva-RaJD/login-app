@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Divider, Paper } from "@mui/material";
-
+import bg from '../static/bg.png'
 // IMPOPTS 
 // icons 
 import CreateIcon from "@mui/icons-material/Create";
@@ -75,16 +75,19 @@ function DetailPage() {
   return (
     <>
       <Box sx={mainDivStyle}>
+      <img id="bgimage" src={bg}></img>
         <Box
           sx={{
             width: { xs: "90%", md: "50%", lg: "30%" },
             height: "80%",
+
           }}
         >
           <Paper
             elevation={24}
             sx={{
               height: "auto",
+              borderRadius: 2,
             }}
           >
             {/* User Profile Image  */}

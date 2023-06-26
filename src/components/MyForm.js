@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { FormControl, Input, FormLabel, Button } from "@mui/material";
 
 import LoginIcon from "@mui/icons-material/Login";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
 
 import Message from "./Items/Message";
 import { FormGroup } from "../stylings/DetailPageStyle";
@@ -78,6 +80,7 @@ const MyForm = () => {
 
       {/* Form */}
       <FormGroup onSubmit={handleSubmit}>
+      <h2>Sign in</h2>
         <FormControl>
           <FormLabel>Email</FormLabel>
           <Input
@@ -112,7 +115,9 @@ const MyForm = () => {
           >
             Login
           </Button>
+          <h4>Don't have an account? <a>sign up</a></h4>
         </FormControl>
+        <div id="share"><GoogleIcon/><FacebookIcon/></div>
       </FormGroup>
     </>
   );

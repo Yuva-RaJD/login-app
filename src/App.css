@@ -17,5 +17,29 @@
 
 body{
   height: 100vh;
-  background-image: linear-gradient(to right top, #0066ff, #2dbdfb, #71dbfb, #1bd6ef, #00fff7);
+  /* background-image: linear-gradient(to right top, #0066ff, #2dbdfb, #71dbfb, #1bd6ef, #00fff7); */
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  /* background-image: #F6F1F1; */
+}
+#bgimage{
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: -1;
+}
+h2{
+  text-align: center;
+}
+a{
+  color: #335ddc;
+  text-align: right;
+}
+h2,h4{
+  color:darkslategrey;
+}
+#share{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  color: #041341;
 }

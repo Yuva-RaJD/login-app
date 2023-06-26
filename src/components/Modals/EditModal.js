@@ -46,7 +46,7 @@ function EditModal(props) {
                 justifyContent: "space-evenly",
                 p: 1,
                 m: 1,
-                bgcolor: "background.paper",
+                bgcolor: "#F6F1F1",
                 borderRadius: 1,
               }}
             >
